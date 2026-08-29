@@ -1,22 +1,14 @@
+import os
+
 import streamlit as st
-# from dotenv import load_dotenv
-import os # Make sure os is imported
 
-# Load variables from .env file
-# load_dotenv()
-
-# --- DEBUGGING STEP ---
-# Check if the API key was loaded successfully
 api_key = os.getenv("GEMINI_API_KEY")
 
 if not api_key:
     st.error("🔴 ERROR: GEMINI_API_KEY not found!")
     st.info("Please make sure you have a .env file in the same directory as main.py with the line: GEMINI_API_KEY='your_api_key'")
-    st.stop() # Stop the app if the key is missing
-# --- END DEBUGGING STEP ---
+    st.stop()
 
-# If the script continues, it means the key was found.
-# We only import the rest of our app if the key exists.
 from langchain_utils import invoke_chain
 
 st.title("Langchain NL2SQL Chatbot")

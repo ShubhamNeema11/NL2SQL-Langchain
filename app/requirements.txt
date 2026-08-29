@@ -2,11 +2,11 @@ streamlit
 pandas
 PyMySQL
 SQLAlchemy
-langchain
-langchain-community
-langchain-core
-langchain-google-genai
-langchain-chroma
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-core==0.2.41
+langchain-google-genai==1.0.10
+langchain-chroma==0.1.4
 pysqlite3-binary
 cryptography
-
+pydantic>=2

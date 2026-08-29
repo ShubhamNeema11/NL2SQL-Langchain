@@ -4,12 +4,12 @@ from operator import itemgetter
 # Remove OpenAI imports
 # from langchain.chains.openai_tools import create_extraction_chain_pydantic
 # from langchain_openai import ChatOpenAI
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 from langchain_google_genai import ChatGoogleGenerativeAI # Import Gemini Chat model
 import os # Import os to access environment variables
 
 # Initialize Gemini LLM (using environment variable for API key)
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=os.environ["GEMINI_API_KEY"], temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash", google_api_key=os.environ["GEMINI_API_KEY"], temperature=0)
 
 
 from typing import List

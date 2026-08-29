@@ -58,7 +58,7 @@ def get_example_selector():
 
     example_selector = SemanticSimilarityExampleSelector.from_examples(
         examples,
-        GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=os.environ["GEMINI_API_KEY"]),
+        GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001", google_api_key=os.environ["GEMINI_API_KEY"]),
         Chroma,
         k=2,
         input_keys=["input"],
