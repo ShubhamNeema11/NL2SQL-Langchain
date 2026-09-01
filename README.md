@@ -2,7 +2,6 @@
 
 This repository contains an intelligent NL2SQL (Natural Language to SQL) conversational analytics platform designed to query large-scale relational datasets in real time using natural language.
 
-Chatbot Link - https://nl2sql-divyamiitg.streamlit.app/ 
 
 Built using LangChain, ChromaDB, Streamlit, and Gemini API, the platform enables semantic query understanding, adaptive table selection, and LLM-driven SQL generation, making data analytics more accessible and scalable.
 
