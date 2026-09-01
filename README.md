@@ -168,10 +168,3 @@ streamlit run app/main.py
 
 • Embedding results into interactive BI dashboards
 
-📧 Reach out!
-
-Divyam Jain
-
-Email: j.divyam@iitg.ac.in
-
-[Portfolio](https://divyamiitg.github.io/) | [LinkedIn](https://www.linkedin.com/in/divyamiitg/)
